@@ -8,9 +8,9 @@ def LI(x, x_vs, y_vs):
     n = len(x_vs)
     result = 0
 
-    for i in range(s):
+    for i in range(n):
         temp = y_vs[i]
-        for j in range(s):
+        for j in range(n):
             if i != j:
                 temp *= (x - x_vs[j]) / (x_vs[i] - x_vs[j])
         result += temp
