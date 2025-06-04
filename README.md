@@ -38,7 +38,7 @@ print(f"f({x}) ≈ {f_x:.2f}")
 
 - Fungsi menghitung nilai interpolasi dengan rumus polinomial Lagrange:
 
-  
+  ![Rumus](./Rumus.png)
 
 - `for i in range(n)`: mengiterasi tiap titik data untuk menghitung basis polinomial Lagrange.
 
