@@ -3,29 +3,31 @@
 ## Kode Program
 
 ```python
+# rumus Interpolasi Lagrange:
 def LI(x, x_vs, y_vs):
     n = len(x_vs)
     result = 0
 
-    for i in range(n):
+    for i in range(s):
         temp = y_vs[i]
-        for j in range(n):
+        for j in range(s):
             if i != j:
                 temp *= (x - x_vs[j]) / (x_vs[i] - x_vs[j])
         result += temp
 
     return result
 
-# Data titik
+# data:
 x_vs = [6, 9, 12, 15]
 y_vs = [234, 960, 2280, 4356]
 
-# Titik yang ingin dicari f(x)
+# f(x) saat:
 x = 11
 
-# Menghitung f(11)
+# f(11):
 f_x = LI(x, x_vs, y_vs)
 print(f"f({x}) ≈ {f_x:.2f}")
+```
 
 ## Penjelasan Kode
 
@@ -36,19 +38,13 @@ print(f"f({x}) ≈ {f_x:.2f}")
 
 - Fungsi menghitung nilai interpolasi dengan rumus polinomial Lagrange:
 
-  \[
-  L_i(x) = \prod_{\substack{j=0 \\ j \neq i}}^{n-1} \frac{x - x_j}{x_i - x_j}
-  \]
-
-  \[
-  f(x) = \sum_{i=0}^{n-1} y_i \cdot L_i(x)
-  \]
+  
 
 - `for i in range(n)`: mengiterasi tiap titik data untuk menghitung basis polinomial Lagrange.
 
-- `for j in range(n)`: menghitung produk untuk \(L_i(x)\) dengan mengalikan pecahan \(\frac{x - x_j}{x_i - x_j}\) untuk setiap \(j \neq i\).
+- `for j in range(n)`: menghitung produk untuk `Li(x)` dengan mengalikan pecahan `(x - x_j) / (x_i - x_j)` untuk setiap `j ≠ i`.
 
-- Variabel `result` menjumlahkan hasil tiap basis dikalikan nilai \(y_i\).
+- Variabel `result` menjumlahkan hasil tiap basis dikalikan nilai `y_i`.
 
 ## Anggota R08
 
