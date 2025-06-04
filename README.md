@@ -48,8 +48,8 @@ print(f"f({x}) ≈ {f_x:.2f}")
 
 ## Anggota R08
 
-- Nama Anggota 1  
-- Nama Anggota 2  
-- Nama Anggota 3  
+- Krisna Anugrah Arianto Heru Putro (5053241002)
+- Rafian Dany Azadirahta (5053241008)
+- Sofia Elsa Mahera (5053241011)
 
 
