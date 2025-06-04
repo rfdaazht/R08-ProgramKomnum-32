@@ -42,9 +42,9 @@ print(f"f({x}) ≈ {f_x:.2f}")
 
 - `for i in range(n)`: mengiterasi tiap titik data untuk menghitung basis polinomial Lagrange.
 
-- `for j in range(n)`: menghitung produk untuk `Li(x)` dengan mengalikan pecahan `(x - x_j) / (x_i - x_j)` untuk setiap `j ≠ i`.
+- `for j in range(n)`: menghitung produk untuk `Li(x)` dengan mengalikan pecahan `(x - xj) / (xi - xj)` untuk setiap `j ≠ i`.
 
-- Variabel `result` menjumlahkan hasil tiap basis dikalikan nilai `y_i`.
+- Variabel `result` menjumlahkan hasil tiap basis dikalikan nilai `yi`.
 
 ## Anggota R08
 
